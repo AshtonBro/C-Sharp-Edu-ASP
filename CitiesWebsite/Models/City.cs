@@ -8,14 +8,14 @@ namespace CitiesWebsite.Models
     public class City
     {
         public string Country { get; }
-        public string Name { get; }
+        public string CityName { get; }
         public string TimeZone { get; }
         public CityPopulation Population { get; }
 
-        public City(string country, string name, string timeZone, CityPopulation population)
+        public City(string country, string cityName, string timeZone, CityPopulation population)
         {
             Country = country;
-            Name = name;
+            CityName = cityName;
             TimeZone = timeZone;
             Population = population;
         }
