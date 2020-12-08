@@ -1,0 +1,6 @@
+﻿<div>
+    <h2>
+        @await Component.InvokeAsync("City", item.Key)
+    </h2>
+    <img src="@Url.Action("GetImage", new { cityName = ViewBag.CurrentCity.Name })" />
+</div>
