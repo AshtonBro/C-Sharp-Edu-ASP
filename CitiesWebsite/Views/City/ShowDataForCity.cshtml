@@ -1,5 +1,15 @@
-﻿<title>ShowDataForCity</title>
-<link rel="stylesheet" type="text/css" href="~/css/style.css" />
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ShowDataForCity</title>
+    <link rel="stylesheet" type="text/css" href="~/css/style.css" />
+</head>
 <body>
     <div>
         <h2>@ViewBag.City.CityName</h2>
@@ -8,3 +18,4 @@
         <span><img src="@Url.Action("GetImage", new { cityName = ViewBag.City.CityName })" /></span>
     </div>
 </body>
+</html>
