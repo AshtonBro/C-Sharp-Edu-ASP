@@ -15,7 +15,6 @@ namespace ZooSite.Controllers
         private ZooContext _context;
         private IHostingEnvironment _environment;
 
-
         public ZooController(ZooContext context, IHostingEnvironment environment)
         {
             _context = context;
